@@ -3,8 +3,7 @@
 IFS='
 '
 
-NDK=`which ndk-build`
-NDK=`dirname $NDK`
+NDK=$ANDROID_NDK_ROOT
 
 if uname -s | grep -i "linux" > /dev/null ; then
   MYARCH=linux-$(arch)

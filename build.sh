@@ -14,11 +14,7 @@ else
   NCPU=8
 fi
 
-NDK=`which ndk-build`
-NDK=`dirname $NDK`
-if [ $IS_LINUX ]; then
-  NDK=`readlink -f $NDK`
-fi
+NDK=$ANDROID_NDK_ROOT
 
 export CLANG=1
 
